@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frameworks", "Frameworks", "{288E87F3-72C8-4432-AAE2-CF21826A32ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digiturk.Core", "Frameworks\Digiturk.Core\Digiturk.Core.csproj", "{CE2FAA75-7895-4EF7-B240-F45C65B7424D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digiturk.Data", "Frameworks\Digiturk.Data\Digiturk.Data.csproj", "{BD397FAC-EE1B-4E14-8551-6A3CC1FF5531}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digiturk.Services", "Frameworks\Digiturk.Services\Digiturk.Services.csproj", "{661A64D5-9AB8-4133-90BC-2AE34C82FB44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{88D8BAC1-A047-4331-A42E-5C3587A01A7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digiturk.Web.Api", "Presentation\Digiturk.Web.Api\Digiturk.Web.Api.csproj", "{557E354B-EC0D-43EA-8356-8EB03BB71D4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE2FAA75-7895-4EF7-B240-F45C65B7424D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE2FAA75-7895-4EF7-B240-F45C65B7424D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE2FAA75-7895-4EF7-B240-F45C65B7424D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE2FAA75-7895-4EF7-B240-F45C65B7424D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD397FAC-EE1B-4E14-8551-6A3CC1FF5531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD397FAC-EE1B-4E14-8551-6A3CC1FF5531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD397FAC-EE1B-4E14-8551-6A3CC1FF5531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD397FAC-EE1B-4E14-8551-6A3CC1FF5531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{661A64D5-9AB8-4133-90BC-2AE34C82FB44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661A64D5-9AB8-4133-90BC-2AE34C82FB44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661A64D5-9AB8-4133-90BC-2AE34C82FB44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661A64D5-9AB8-4133-90BC-2AE34C82FB44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557E354B-EC0D-43EA-8356-8EB03BB71D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557E354B-EC0D-43EA-8356-8EB03BB71D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557E354B-EC0D-43EA-8356-8EB03BB71D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557E354B-EC0D-43EA-8356-8EB03BB71D4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CE2FAA75-7895-4EF7-B240-F45C65B7424D} = {288E87F3-72C8-4432-AAE2-CF21826A32ED}
+		{BD397FAC-EE1B-4E14-8551-6A3CC1FF5531} = {288E87F3-72C8-4432-AAE2-CF21826A32ED}
+		{661A64D5-9AB8-4133-90BC-2AE34C82FB44} = {288E87F3-72C8-4432-AAE2-CF21826A32ED}
+		{557E354B-EC0D-43EA-8356-8EB03BB71D4C} = {88D8BAC1-A047-4331-A42E-5C3587A01A7D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CC86A4C-2458-4067-9204-8BC39B7CC777}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Core\bin\Debug\netstandard2.0\Digiturk.Core.deps.json
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Core\bin\Debug\netstandard2.0\Digiturk.Core.dll
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Core\bin\Debug\netstandard2.0\Digiturk.Core.pdb
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.csproj.CoreCompileInputs.cache
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.AssemblyInfoInputs.cache
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.AssemblyInfo.cs
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.dll
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.pdb

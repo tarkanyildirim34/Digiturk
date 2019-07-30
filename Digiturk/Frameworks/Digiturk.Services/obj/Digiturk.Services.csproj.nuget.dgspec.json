@@ -1,0 +1,187 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Services\\Digiturk.Services.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj",
+        "projectName": "Digiturk.Core",
+        "projectPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj",
+        "packagesPath": "C:\\Users\\TarkanPc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TarkanPc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Data\\Digiturk.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Data\\Digiturk.Data.csproj",
+        "projectName": "Digiturk.Data",
+        "projectPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Data\\Digiturk.Data.csproj",
+        "packagesPath": "C:\\Users\\TarkanPc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TarkanPc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj": {
+                "projectPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Services\\Digiturk.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Services\\Digiturk.Services.csproj",
+        "projectName": "Digiturk.Services",
+        "projectPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Services\\Digiturk.Services.csproj",
+        "packagesPath": "C:\\Users\\TarkanPc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TarkanPc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj": {
+                "projectPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj"
+              },
+              "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Data\\Digiturk.Data.csproj": {
+                "projectPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Data\\Digiturk.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

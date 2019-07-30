@@ -1,0 +1,14 @@
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\bin\Debug\netstandard2.0\Digiturk.Services.deps.json
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\bin\Debug\netstandard2.0\Digiturk.Services.dll
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\bin\Debug\netstandard2.0\Digiturk.Services.pdb
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\bin\Debug\netstandard2.0\Digiturk.Core.dll
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\bin\Debug\netstandard2.0\Digiturk.Data.dll
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\bin\Debug\netstandard2.0\Digiturk.Core.pdb
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\bin\Debug\netstandard2.0\Digiturk.Data.pdb
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\obj\Debug\netstandard2.0\Digiturk.Services.csprojAssemblyReference.cache
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\obj\Debug\netstandard2.0\Digiturk.Services.csproj.CoreCompileInputs.cache
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\obj\Debug\netstandard2.0\Digiturk.Services.AssemblyInfoInputs.cache
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\obj\Debug\netstandard2.0\Digiturk.Services.AssemblyInfo.cs
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\obj\Debug\netstandard2.0\Digiturk.Services.csproj.CopyComplete
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\obj\Debug\netstandard2.0\Digiturk.Services.dll
+C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Services\obj\Debug\netstandard2.0\Digiturk.Services.pdb
