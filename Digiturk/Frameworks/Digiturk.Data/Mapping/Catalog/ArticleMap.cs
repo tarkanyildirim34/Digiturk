@@ -19,12 +19,12 @@ namespace Digiturk.Data.Mapping.Catalog
             builder.HasKey(article => article.Id);
             builder.Property(article => article.UserId).IsRequired();
             builder.Property(article => article.Body).IsRequired();
-            builder.Property(article => article.Date).HasDefaultValue(DateTime.Now).IsRequired();
-            builder.Property(article => article.Deleted).HasDefaultValue(0).IsRequired();
+            builder.Property(article => article.Date).IsRequired();
+            builder.Property(article => article.Deleted).IsRequired();
             builder.Property(article => article.Description).HasMaxLength(500).IsRequired();
             builder.Property(article => article.Image).HasMaxLength(500).IsRequired();
             builder.Property(article => article.Title).HasMaxLength(500).IsRequired();
-            builder.Property(article => article.Published).HasDefaultValue(1).IsRequired();
+            builder.Property(article => article.Published).IsRequired();
 
             base.Configure(builder);
         }

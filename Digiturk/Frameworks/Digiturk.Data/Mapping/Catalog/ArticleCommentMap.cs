@@ -17,12 +17,12 @@ namespace Digiturk.Data.Mapping.Catalog
         {
             builder.ToTable(nameof(ArticleComment));
             builder.HasKey(articlecomment => articlecomment.Id);
-            builder.Property(articlecomment => articlecomment.ArticleId).HasDefaultValue(0).IsRequired();
+            builder.Property(articlecomment => articlecomment.ArticleId).IsRequired();
             builder.Property(articlecomment => articlecomment.Content).IsRequired();
-            builder.Property(articlecomment => articlecomment.CreateDate).HasDefaultValue(DateTime.Now).IsRequired();
-            builder.Property(articlecomment => articlecomment.CreateUserId).HasDefaultValue(0).IsRequired();
-            builder.Property(articlecomment => articlecomment.Published).HasDefaultValue(1).IsRequired();
-            builder.Property(articlecomment => articlecomment.Deleted).HasDefaultValue(0).IsRequired();
+            builder.Property(articlecomment => articlecomment.CreateDate).IsRequired();
+            builder.Property(articlecomment => articlecomment.CreateUserId).IsRequired();
+            builder.Property(articlecomment => articlecomment.Published).IsRequired();
+            builder.Property(articlecomment => articlecomment.Deleted).IsRequired();
 
 
             base.Configure(builder);

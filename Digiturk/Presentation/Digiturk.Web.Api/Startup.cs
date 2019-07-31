@@ -1,20 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using App.Services.Logging;
 using Digiturk.Core;
+using Digiturk.Core.Caching;
 using Digiturk.Core.Data;
 using Digiturk.Data;
 using Digiturk.Services.Catalog;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Digiturk.Web.Api
 {
@@ -34,11 +41,28 @@ namespace Digiturk.Web.Api
 
             services.AddDbContext<DigiturkObjectContext>(item => item.UseSqlServer(Configuration.GetConnectionString("myconn")));
             services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
+            services.AddScoped(typeof(ICacheManager), typeof(PerRequestCacheManager));
             services.AddScoped(typeof(IPagedList<>), typeof(PagedList<>));
             services.AddScoped(typeof(IUserService), typeof(UserService));
             services.AddScoped(typeof(IArticleService), typeof(ArticleService));
             services.AddScoped(typeof(IArticleCommentService), typeof(ArticleCommentService));
+            services.AddScoped(typeof(IUserActivityService), typeof(UserActivityService));
             services.AddScoped(typeof(IDbContext), typeof(DigiturkObjectContext));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(jwtBearerOptions =>
+    {
+        jwtBearerOptions.TokenValidationParameters = new TokenValidationParameters()
+        {
+            ValidateActor = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = Configuration["Issuer"],
+            ValidAudience = Configuration["Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SigningKey"]))
+        };
+    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,7 +77,7 @@ namespace Digiturk.Web.Api
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

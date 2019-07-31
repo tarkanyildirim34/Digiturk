@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Digiturk.Core;
+using Digiturk.Core.Caching;
 using Digiturk.Core.Data;
 using Digiturk.Core.Domain.Catalog;
 
@@ -8,20 +9,27 @@ namespace Digiturk.Services.Catalog
 {
     public class ArticleCommentService : IArticleCommentService
     {
+        #region CacheKeys
+
+        public static string ArticleCommentsByIdCacheKey => "Digiturk.articleComment.id-{0}";
+        public static string ArticleCommentsPrefixCacheKey => "Digiturk.articleComment.";
+
+        #endregion
+
         #region Fields
 
-        //private readonly ICacheManager _cacheManager;
         private readonly IRepository<ArticleComment> _articlecommentRepository;
-
+        private readonly ICacheManager _cacheManager;
 
         #endregion
 
         #region Ctor
 
-        public ArticleCommentService(IRepository<ArticleComment> articlecommentRepository)
+        public ArticleCommentService(IRepository<ArticleComment> articlecommentRepository,
+            ICacheManager cacheManager)
         {
-            //_cacheManager = cacheManager;
             _articlecommentRepository = articlecommentRepository;
+            _cacheManager = cacheManager;
 
         }
 
@@ -51,7 +59,6 @@ namespace Digiturk.Services.Catalog
             query = query.Distinct().OrderBy(m => m.Id);
 
             return new PagedList<ArticleComment>(query, pageIndex, pageSize);
-
         }
 
         public ArticleComment GetArticleCommentById(int articlecommentId)
@@ -59,7 +66,9 @@ namespace Digiturk.Services.Catalog
             if (articlecommentId == 0)
                 return null;
 
-            return _articlecommentRepository.GetById(articlecommentId);
+            var key = string.Format(ArticleCommentsByIdCacheKey, articlecommentId);
+            return _cacheManager.Get(key, () => _articlecommentRepository.GetById(articlecommentId));
+
         }
 
         public void InsertArticleComment(ArticleComment articlecomment)
@@ -68,6 +77,9 @@ namespace Digiturk.Services.Catalog
                 throw new ArgumentNullException(nameof(articlecomment));
 
             _articlecommentRepository.Insert(articlecomment);
+
+            //cache
+            _cacheManager.RemoveByPrefix(ArticleCommentsPrefixCacheKey);
         }
 
         public void UpdateArticleComment(ArticleComment articlecomment)
@@ -76,6 +88,9 @@ namespace Digiturk.Services.Catalog
                 throw new ArgumentNullException(nameof(articlecomment));
 
             _articlecommentRepository.Update(articlecomment);
+
+            //cache
+            _cacheManager.RemoveByPrefix(ArticleCommentsPrefixCacheKey);
         }
 
         #endregion

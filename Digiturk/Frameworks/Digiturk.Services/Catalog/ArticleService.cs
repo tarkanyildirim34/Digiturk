@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Digiturk.Core;
+using Digiturk.Core.Caching;
 using Digiturk.Core.Data;
 using Digiturk.Core.Domain.Catalog;
 
@@ -8,22 +9,29 @@ namespace Digiturk.Services.Catalog
 {
     public class ArticleService : IArticleService
     {
+        #region CacheKeys
+
+        public static string ArticlesByIdCacheKey => "Digiturk.article.id-{0}";
+        public static string ArticlesPrefixCacheKey => "Digiturk.article.";
+
+        #endregion
 
         #region Fields
 
         //private readonly ICacheManager _cacheManager;
         private readonly IRepository<Article> _articleRepository;
-
+        private readonly ICacheManager _cacheManager;
 
         #endregion
 
         #region Ctor
 
-        public ArticleService(IRepository<Article> articleRepository)
+        public ArticleService(IRepository<Article> articleRepository,
+            ICacheManager cacheManager)
         {
             //_cacheManager = cacheManager;
             _articleRepository = articleRepository;
-
+            _cacheManager = cacheManager;
         }
 
         #endregion
@@ -60,7 +68,8 @@ namespace Digiturk.Services.Catalog
             if (articleId == 0)
                 return null;
 
-            return _articleRepository.GetById(articleId);
+            var key = string.Format(ArticlesByIdCacheKey, articleId);
+            return _cacheManager.Get(key, () => _articleRepository.GetById(articleId));
         }
 
         public void InsertArticle(Article article)
@@ -69,6 +78,9 @@ namespace Digiturk.Services.Catalog
                 throw new ArgumentNullException(nameof(article));
 
             _articleRepository.Insert(article);
+
+            //cache
+            _cacheManager.RemoveByPrefix(ArticlesPrefixCacheKey);
         }
 
         public void UpdateArticle(Article article)
@@ -77,6 +89,9 @@ namespace Digiturk.Services.Catalog
                 throw new ArgumentNullException(nameof(article));
 
             _articleRepository.Update(article);
+
+            //cache
+            _cacheManager.RemoveByPrefix(ArticlesPrefixCacheKey);
         }
 
         #endregion

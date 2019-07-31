@@ -4,10 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Digiturk.Core.Domain.Catalog;
 using Digiturk.Services.Catalog;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Digiturk.Web.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase

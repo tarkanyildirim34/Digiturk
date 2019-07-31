@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Digiturk.Core.Domain.Catalog;
 using Digiturk.Services.Catalog;
 using Microsoft.AspNetCore.Mvc;
@@ -24,6 +21,13 @@ namespace Digiturk.Web.Api.Controllers
         public ActionResult<IEnumerable<string>> Get()
         {
             return Ok(_articlecommentService.GetAllArticleComments());
+        }
+
+        // GET api/values/5
+        [HttpGet("{id}")]
+        public ActionResult<ArticleComment> Get(int id)
+        {
+            return _articlecommentService.GetArticleCommentById(id);
         }
 
         [Route("~/api/Comment/GetAllArticleComments")]
