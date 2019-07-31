@@ -14,26 +14,15 @@ namespace Digiturk.Web.Api.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private readonly IUserService _userService;
-        public ValuesController(IUserService userService)
-        {
-            _userService = userService;
-        }
+        
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<string> Get()
         {
-            return Ok(_userService.GetAllUsers());
+            return "value";
         }
 
-
-
-        [Route("~/api/GetAllUsers")]
-        [HttpGet]
-        public IEnumerable<User> GetAllUsers()
-        {
-            return _userService.GetAllUsers();
-        }
+        
 
         // GET api/values/5
         [HttpGet("{id}")]

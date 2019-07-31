@@ -19,7 +19,7 @@ namespace Digiturk.Services.Catalog
         /// <param name="pageSize">Page size</param>
         /// <param name="showHidden">A value indicating whether to show hidden records</param>
         /// <returns>ArticleComments</returns>
-        IPagedList<ArticleComment> GetAllArticleComments(string articlecommentName = "",
+        IPagedList<ArticleComment> GetAllArticleComments(int Id = 0,int ArticleId = 0,string Content = "",int UserId = 0,
             int pageIndex = 0,
             int pageSize = int.MaxValue,
             bool showHidden = false);

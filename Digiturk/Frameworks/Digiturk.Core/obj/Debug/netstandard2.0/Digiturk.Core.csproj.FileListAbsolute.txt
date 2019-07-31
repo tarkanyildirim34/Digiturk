@@ -18,9 +18,9 @@ C:\Users\muham\Downloads\Digiturk-master\Digiturk\Frameworks\Digiturk.Core\obj\D
 C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Core\bin\Debug\netstandard2.0\Digiturk.Core.deps.json
 C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Core\bin\Debug\netstandard2.0\Digiturk.Core.dll
 C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Core\bin\Debug\netstandard2.0\Digiturk.Core.pdb
-C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.csprojAssemblyReference.cache
 C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.csproj.CoreCompileInputs.cache
 C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.AssemblyInfoInputs.cache
 C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.AssemblyInfo.cs
 C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.dll
 C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.pdb
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Core\obj\Debug\netstandard2.0\Digiturk.Core.csprojAssemblyReference.cache

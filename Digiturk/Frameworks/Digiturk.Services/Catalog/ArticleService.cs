@@ -48,12 +48,21 @@ namespace Digiturk.Services.Catalog
             UpdateArticle(article);
         }
 
-        public IPagedList<Article> GetAllArticles(string articleName = "", int pageIndex = 0, int pageSize = int.MaxValue, bool showHidden = false)
+        public IPagedList<Article> GetAllArticles(int userId = 0, string title = "", string description = "", int pageIndex = 0, int pageSize = int.MaxValue, bool showHidden = false)
         {
             var query = _articleRepository.Table;
 
             if (!showHidden)
                 query = query.Where(m => m.Published);
+
+            if (userId > 0)
+                query = query.Where(m => m.UserId == userId);
+
+            if (!string.IsNullOrEmpty(title))
+                query = query.Where(m => m.Title.Contains(title));
+
+            if (!string.IsNullOrEmpty(description))
+                query = query.Where(m => m.Description.Contains(description));
 
             query = query.Where(m => !m.Deleted);
 

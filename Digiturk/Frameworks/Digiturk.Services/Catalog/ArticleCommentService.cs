@@ -47,12 +47,21 @@ namespace Digiturk.Services.Catalog
             UpdateArticleComment(articlecomment);
         }
 
-        public IPagedList<ArticleComment> GetAllArticleComments(string articlecommentName = "", int pageIndex = 0, int pageSize = int.MaxValue, bool showHidden = false)
+        public IPagedList<ArticleComment> GetAllArticleComments(int Id = 0, int ArticleId = 0, string Content = "", int UserId = 0, int pageIndex = 0, int pageSize = int.MaxValue, bool showHidden = false)
         {
             var query = _articlecommentRepository.Table;
 
             if (!showHidden)
                 query = query.Where(m => m.Published);
+            if (Id > 0)
+                query = query.Where(m => m.Id == Id);
+            if (ArticleId > 0)
+                query = query.Where(m => m.ArticleId == ArticleId);
+            if (Content != "")
+                query = query.Where(m => m.Content == Content);
+            if (UserId > 0)
+                query = query.Where(m => m.CreateUserId == UserId);
+
 
             query = query.Where(m => !m.Deleted);
 
