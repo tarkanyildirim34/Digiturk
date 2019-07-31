@@ -10,3 +10,15 @@ C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandar
 C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandard2.0\Digiturk.Data.csproj.CopyComplete
 C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandard2.0\Digiturk.Data.dll
 C:\Users\TarkanPc\Desktop\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandard2.0\Digiturk.Data.pdb
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\bin\Debug\netstandard2.0\Digiturk.Data.deps.json
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\bin\Debug\netstandard2.0\Digiturk.Data.dll
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\bin\Debug\netstandard2.0\Digiturk.Data.pdb
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\bin\Debug\netstandard2.0\Digiturk.Core.dll
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\bin\Debug\netstandard2.0\Digiturk.Core.pdb
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandard2.0\Digiturk.Data.csprojAssemblyReference.cache
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandard2.0\Digiturk.Data.csproj.CoreCompileInputs.cache
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandard2.0\Digiturk.Data.AssemblyInfoInputs.cache
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandard2.0\Digiturk.Data.AssemblyInfo.cs
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandard2.0\Digiturk.Data.csproj.CopyComplete
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandard2.0\Digiturk.Data.dll
+C:\GitProject\Digiturk\Digiturk\Frameworks\Digiturk.Data\obj\Debug\netstandard2.0\Digiturk.Data.pdb

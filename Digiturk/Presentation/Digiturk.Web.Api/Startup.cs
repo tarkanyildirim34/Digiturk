@@ -36,6 +36,8 @@ namespace Digiturk.Web.Api
             services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
             services.AddScoped(typeof(IPagedList<>), typeof(PagedList<>));
             services.AddScoped(typeof(IUserService), typeof(UserService));
+            services.AddScoped(typeof(IArticleService), typeof(ArticleService));
+            services.AddScoped(typeof(IArticleCommentService), typeof(ArticleCommentService));
             services.AddScoped(typeof(IDbContext), typeof(DigiturkObjectContext));
         }
 

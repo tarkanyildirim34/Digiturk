@@ -2828,11 +2828,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Services\\Digiturk.Services.csproj",
+      "projectUniqueName": "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Services\\Digiturk.Services.csproj",
       "projectName": "Digiturk.Services",
-      "projectPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Services\\Digiturk.Services.csproj",
+      "projectPath": "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Services\\Digiturk.Services.csproj",
       "packagesPath": "C:\\Users\\TarkanPc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Services\\obj\\",
+      "outputPath": "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2851,11 +2851,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj": {
-              "projectPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj"
+            "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj": {
+              "projectPath": "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj"
             },
-            "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Data\\Digiturk.Data.csproj": {
-              "projectPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Data\\Digiturk.Data.csproj"
+            "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Data\\Digiturk.Data.csproj": {
+              "projectPath": "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Data\\Digiturk.Data.csproj"
             }
           }
         }

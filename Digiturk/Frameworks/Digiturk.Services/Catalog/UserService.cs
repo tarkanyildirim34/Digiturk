@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Digiturk.Core;
-using Digiturk.Core.Caching;
 using Digiturk.Core.Data;
 using Digiturk.Core.Domain.Catalog;
 
@@ -14,7 +11,7 @@ namespace Digiturk.Services.Catalog
 
         #region Fields
 
-        private readonly ICacheManager _cacheManager;
+        //private readonly ICacheManager _cacheManager;
         private readonly IRepository<User> _userRepository;
 
 
@@ -22,10 +19,9 @@ namespace Digiturk.Services.Catalog
 
         #region Ctor
 
-        public UserService(ICacheManager cacheManager,
-            IRepository<User> userRepository)
+        public UserService(IRepository<User> userRepository)
         {
-            _cacheManager = cacheManager;
+            //_cacheManager = cacheManager;
              _userRepository = userRepository;
            
         }

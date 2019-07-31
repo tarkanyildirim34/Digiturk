@@ -15,8 +15,7 @@ namespace Digiturk.Services.Catalog
         /// <summary>
         /// Gets all users
         /// </summary>
-        /// <param name="userName">User name</param>
-        /// <param name="storeId">Store identifier; 0 if you want to get all records</param>
+        /// <param name="userName">User name</param> 
         /// <param name="pageIndex">Page index</param>
         /// <param name="pageSize">Page size</param>
         /// <param name="showHidden">A value indicating whether to show hidden records</param>

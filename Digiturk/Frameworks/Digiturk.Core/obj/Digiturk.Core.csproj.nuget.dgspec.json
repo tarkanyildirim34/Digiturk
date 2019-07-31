@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj": {}
+    "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj": {
+    "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj",
+        "projectUniqueName": "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj",
         "projectName": "Digiturk.Core",
-        "projectPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj",
+        "projectPath": "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Core\\Digiturk.Core.csproj",
         "packagesPath": "C:\\Users\\TarkanPc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TarkanPc\\Desktop\\Digiturk\\Frameworks\\Digiturk.Core\\obj\\",
+        "outputPath": "C:\\GitProject\\Digiturk\\Digiturk\\Frameworks\\Digiturk.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
